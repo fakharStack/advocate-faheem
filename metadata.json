@@ -1,0 +1,6 @@
+{
+  "name": "Doctor Hospital Sahiwal",
+  "description": "Modern, trusted healthcare in Sahiwal.",
+  "requestFramePermissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
