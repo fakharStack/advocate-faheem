@@ -10,59 +10,66 @@ import {
 } from "lucide-react";
 
 export const hospital = {
-  name: "Hafiz Anwar Zia Advocate",
-  title: "Advocate High Court & District Courts",
-  shortName: "HAZ",
-  city: "Narowal",
-  address: "Chamber 40, District & Sessions Court, Narowal, Punjab, Pakistan",
-  phone: "+92 301 7672378",
-  phoneHref: "+923017672378",
-  whatsapp: "923017672378",
-  whatsappHref: "https://wa.me/923017672378",
-  hours: "Monday – Saturday: 8:30 AM – 4:30 PM",
-  courtHours: "Court Hours: 8:30 AM – 2:30 PM | Chamber: 2:30 PM – 5:00 PM",
-  rating: "4.7",
-  reviews: "16",
-  tagline: "Trusted Legal Representation in Narowal.",
+  name: "Malik Faheem Khokhar",
+  title: "Advocate High Court, Lahore",
+  shortName: "MFK",
+  city: "Lahore",
+  address: "Lahore High Court, Lahore, Punjab, Pakistan",
+  phone: "+92 308 5125111",
+  phoneHref: "+923085125111",
+  phone2: "+92 320 8007786",
+  phone2Href: "+923208007786",
+  whatsapp: "923085125111",
+  whatsappHref: "https://wa.me/923085125111",
+  whatsapp2: "923208007786",
+  whatsappHref2: "https://wa.me/923208007786",
+  hours: "Monday – Saturday: 9:00 AM – 5:00 PM",
+  courtHours: "Court Hours: 9:00 AM – 2:00 PM | Chamber: 2:00 PM – 5:00 PM",
+  rating: "96%",
+  reviews: "52",
+  tagline: "Trusted Legal Representation at the Lahore High Court.",
   intro:
-    "Distinguished legal practice committed to constitutional justice, zealous advocacy, and honest counsel across District Courts and High Court.",
-  bio: "Hafiz Anwar Zia is an esteemed advocate with years of dedicated practice across District and Sessions Courts and High Courts. Known for meticulous legal drafting, commanding courtroom argument, and uncompromising professional ethics, he delivers strategic legal solutions in civil litigation, criminal defense, family disputes, and property matters.",
+    "A dedicated legal practice committed to justice, bail advocacy, and honest legal counsel for all — especially those who cannot afford representation — at the Lahore High Court.",
+  bio: "Malik Faheem Khokhar, also known as Advocate Faheem Khokhar, is an esteemed advocate practicing at the Lahore High Court. A graduate of the University of the Punjab and alumnus of DPS Lahore, he is widely recognised for his tireless advocacy in bail matters, criminal defense, and his unique commitment to helping the underprivileged access justice. His YouTube channel features legal advice videos and real court proceedings — with viewers frequently praising his work in securing bail for poor and unclaimed prisoners produced before courts. He has maintained a 96% recommendation rating from his Facebook page followers.",
+  youtube: "https://www.youtube.com/@advocatefaheemkhokhar265",
+  facebookPage: "https://www.facebook.com/advocatefaheemkhokhar",
+  facebookSince: "August 2012",
 } as const;
 
 export const advocate = hospital;
 
 export const highlights = [
-  "High Court & District Court representation",
+  "Lahore High Court representation & bail advocacy",
   "Honest, transparent & ethical legal counsel",
-  "Thorough case drafting & evidence preparation",
-  "Dual chambers in Narowal & Zafarwal",
+  "Champion for the underprivileged & poor clients",
+  "96% recommend rating — 52 verified reviews",
 ] as const;
 
 export const practiceAreas = [
   {
+    id: "criminal-defense",
+    name: "Criminal Defense & Bail",
+    description:
+      "Vigorous defense and expert bail advocacy at every stage of the criminal justice system — from FIR registration and pre-arrest bail to High Court proceedings, cross-examination, and criminal appeals.",
+    Icon: Gavel,
+    details: [
+      "Pre-arrest & post-arrest bail petitions (High Court)",
+      "Trial defense before Magistrates & Sessions Judges",
+      "Quashment of FIRs (Section 561-A CrPC / Writ)",
+      "Criminal appeals against conviction & sentences",
+    ],
+  },
+  {
     id: "civil-litigation",
     name: "Civil Litigation",
     description:
-      "Comprehensive representation in property disputes, specific performance, declarations of title, permanent injunctions, recovery of damages, and appellate matters.",
+      "Comprehensive representation in property disputes, specific performance, declarations of title, permanent injunctions, recovery of damages, and appellate matters before the High Court.",
     Icon: Scale,
     details: [
       "Property & land title disputes",
       "Stay orders and interlocutory injunctions",
       "Specific performance of contracts",
-      "Appeals, revisions & reviews before Sessions & High Court",
-    ],
-  },
-  {
-    id: "criminal-defense",
-    name: "Criminal Defense",
-    description:
-      "Vigorous defense at every stage of the criminal justice system—from registration of FIR and pre-arrest bail to trial proceedings, cross-examination, and criminal appeals.",
-    Icon: Gavel,
-    details: [
-      "Pre-arrest & post-arrest bail petitions",
-      "Trial defense before Magistrates & Sessions Judges",
-      "Quashment of FIRs (Section 561-A CrPC / Writ)",
-      "Criminal appeals against conviction & sentences",
+      "Appeals, revisions & reviews before High Court",
     ],
   },
   {
@@ -80,28 +87,28 @@ export const practiceAreas = [
   },
   {
     id: "court-representation",
-    name: "Court Representation",
+    name: "High Court Representation",
     description:
-      "Seasoned courtroom advocacy before District & Sessions Courts Narowal, Judicial Magistrates, Special Tribunals, Banking Courts, and the Lahore High Court.",
+      "Seasoned courtroom advocacy before the Lahore High Court including writ petitions, constitutional matters, bail hearings, and appellate proceedings.",
     Icon: Landmark,
     details: [
-      "Regular appearances in Narowal & Zafarwal Courts",
+      "Regular appearances at Lahore High Court",
       "Constitutional writ petitions under Article 199",
       "Appeals before High Court benches",
-      "Representation before Revenue & Administrative Authorities",
+      "Representation before Special Tribunals & Banking Courts",
     ],
   },
   {
-    id: "land-revenue",
-    name: "Revenue & Land Disputes",
+    id: "unclaimed-prisoners",
+    name: "Unclaimed Prisoner Advocacy",
     description:
-      "Expert counsel on Punjab land revenue matters, challenges to fraudulent mutations (Intiqal), partition of joint agricultural holdings, and demarcation proceedings.",
-    Icon: Building2,
+      "Dedicated representation for unclaimed prisoners produced before courts — ensuring that no individual is left without legal representation regardless of financial circumstances.",
+    Icon: ShieldAlert,
     details: [
-      "Challenging fraudulent & disputed mutations",
-      "Partition of joint agricultural & residential property",
-      "Demarcation and possession suits",
-      "Revenue appeals before Tehsildar, AC & Commissioner",
+      "Bail applications for unclaimed prisoners",
+      "Court production hearings & representation",
+      "Coordination with families & court authorities",
+      "Free & subsidised legal help for the underprivileged",
     ],
   },
   {
@@ -124,62 +131,62 @@ export const departments = practiceAreas;
 
 export const chambers = [
   {
-    id: "narowal",
-    name: "Narowal Chamber",
-    designation: "District & Sessions Courts",
-    location: "Chamber 40, District Court Complex",
-    city: "Narowal, Punjab",
-    address: "Chamber 40, District Court, Narowal, Punjab, Pakistan",
-    timings: "Monday – Saturday: 8:30 AM – 4:30 PM",
-    phone: "+92 301 7672378",
-    whatsapp: "923017672378",
-    focus: "Civil & Criminal trials, Sessions cases, District Court hearings",
+    id: "lahore-high-court",
+    name: "Lahore High Court Chamber",
+    designation: "High Court of Punjab",
+    location: "Lahore High Court, Lahore",
+    city: "Lahore, Punjab",
+    address: "Lahore High Court, Lahore, Punjab, Pakistan",
+    timings: "Monday – Saturday: 9:00 AM – 5:00 PM",
+    phone: "+92 308 5125111",
+    whatsapp: "923085125111",
+    focus: "High Court bail hearings, writ petitions, appeals, constitutional matters",
     badge: "Principal Chamber",
-    mapQuery: "District Court Narowal, Punjab, Pakistan",
+    mapQuery: "Lahore High Court, Lahore, Punjab, Pakistan",
   },
   {
-    id: "zafarwal",
-    name: "Zafarwal Chambers",
-    designation: "Tehsil Court Building",
-    location: "Chambers 19 & 20, Court Building",
-    city: "Zafarwal, Narowal",
-    address: "Chambers 19 & 20, Court Building, Zafarwal, District Narowal, Punjab, Pakistan",
-    timings: "Monday – Saturday: 9:00 AM – 3:30 PM",
-    phone: "+92 301 7672378",
-    whatsapp: "923017672378",
-    focus: "Magisterial trials, civil suits, family litigation, local client advisory",
-    badge: "Sub-Divisional Chamber",
-    mapQuery: "Tehsil Courts Zafarwal, Narowal, Pakistan",
+    id: "lahore-district",
+    name: "Lahore District Courts",
+    designation: "District & Sessions Courts",
+    location: "District Courts Complex, Lahore",
+    city: "Lahore, Punjab",
+    address: "District & Sessions Courts, Lahore, Punjab, Pakistan",
+    timings: "Monday – Saturday: 9:00 AM – 4:00 PM",
+    phone: "+92 320 8007786",
+    whatsapp: "923208007786",
+    focus: "Civil & criminal trials, family matters, Sessions cases, District Court hearings",
+    badge: "District Chamber",
+    mapQuery: "District Courts Lahore, Punjab, Pakistan",
   },
 ] as const;
 
 export const testimonials = [
   {
-    name: "Muhammad Imran",
-    role: "Property Owner, Narowal",
+    name: "Muhammad Asif",
+    role: "Client, Bail Matter — Lahore",
     quote:
-      "Hafiz Anwar Zia is one of the most competent and honest advocates in Narowal. He handled our contested agricultural land case with supreme dedication, providing clear counsel at every hearing until our title was fully protected.",
+      "Advocate Faheem Khokhar got bail for my brother who had no money for a lawyer. He is a true servant of justice. May Allah bless him. We are forever grateful for his help in our most difficult time.",
     rating: 5,
   },
   {
-    name: "Tariq Mahmood",
-    role: "Business Client, Zafarwal",
+    name: "Tariq Hussain",
+    role: "YouTube Viewer & Client",
     quote:
-      "Outstanding legal guidance on family settlement and civil disputes. A patient listener who delivers realistic, ethical legal advice without false promises or unnecessary delays. Highly respected in both Narowal and Zafarwal bars.",
+      "I watched his videos on YouTube and learned so much about my legal rights. When I needed help, he was accessible and transparent. He really helps poor people who cannot afford expensive lawyers.",
     rating: 5,
   },
   {
-    name: "Chaudhry Bilal",
-    role: "Client, District Court",
+    name: "Chaudhry Naveed",
+    role: "Facebook Page Follower",
     quote:
-      "Exceptional advocacy and commanding presence in court. Obtained urgent pre-arrest bail for my family member with sharp legal grounds. Always accessible and completely transparent about court procedures.",
+      "His Facebook page has been a source of legal awareness for thousands. He posts about unclaimed prisoners and helps connect families with their loved ones in court. A true advocate for the people.",
     rating: 5,
   },
   {
-    name: "Rana Waqas",
-    role: "Litigant, Civil Suit",
+    name: "Rana Bilal",
+    role: "Client, Lahore High Court",
     quote:
-      "Professional handling of our civil suit and documentation. Always punctual and well-prepared for court hearings. Truly dedicated to his clients' cause.",
+      "Professional, punctual, and deeply knowledgeable. Advocate Faheem Khokhar handled our High Court matter with full dedication and kept us informed at every step of the proceedings.",
     rating: 5,
   },
 ] as const;
@@ -193,22 +200,22 @@ export const faqs = [
   {
     question: "How are advocate fees and litigation expenses structured?",
     answer:
-      "We believe in complete financial transparency. Professional fees are discussed and agreed upon upfront based on the complexity of the matter, forum, and expected stages of litigation. There are never any unexpected costs or hidden fees.",
+      "We believe in complete financial transparency. Professional fees are discussed and agreed upon upfront based on the complexity of the matter, forum, and expected stages of litigation. Advocate Faheem Khokhar is known for helping those who cannot afford legal representation — reach out to discuss your situation.",
   },
   {
-    question: "Do you represent clients in both Narowal and Zafarwal?",
+    question: "Can you handle urgent bail matters at the Lahore High Court?",
     answer:
-      "Yes. Hafiz Anwar Zia maintains permanent working chambers in both locations: Chamber 40 at the District & Sessions Courts in Narowal, and Chambers 19 & 20 at the Court Building in Zafarwal.",
+      "Yes. Bail advocacy — including pre-arrest and post-arrest bail at the High Court — is a core specialty. For urgent bail applications or police matters, WhatsApp directly on 0308 5125111 or 0320 8007786 for an immediate response.",
   },
   {
     question: "How long does a civil or criminal case typically take in court?",
     answer:
-      "The duration of litigation varies based on the nature of the case, statutory notice requirements, witness testimony, and court rosters. Our chamber is committed to proactive advocacy—minimizing unnecessary adjournments and pursuing timely disposal.",
+      "The duration of litigation varies based on the nature of the case, statutory notice requirements, witness testimony, and court rosters. Our chamber is committed to proactive advocacy — minimising unnecessary adjournments and pursuing timely disposal.",
   },
   {
     question: "How do I schedule an urgent consultation?",
     answer:
-      "For urgent matters—including bail applications, stay orders, or impending court deadlines—you can call directly at +92 301 7672378 or send an instant WhatsApp message. Consultations are arranged during chamber hours or by appointment.",
+      "For urgent matters — including bail applications, stay orders, or impending court deadlines — you can call or WhatsApp directly at 0308 5125111 or 0320 8007786. You can also watch legal advice videos on the YouTube channel at youtube.com/@advocatefaheemkhokhar265.",
   },
 ] as const;
 

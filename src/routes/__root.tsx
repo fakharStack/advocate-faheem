@@ -79,18 +79,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hafiz Anwar Zia Advocate — Trusted Legal Representation in Narowal" },
+      { title: "Advocate Faheem Khokhar — Trusted Legal Representation at Lahore High Court" },
       {
         name: "description",
         content:
-          "Advocate High Court & District Courts. Civil litigation, criminal defense, family disputes, and courtroom representation in Narowal and Zafarwal.",
+          "Malik Faheem Khokhar, Advocate High Court Lahore. Expert bail advocacy, criminal defense, civil litigation, and legal help for the underprivileged.",
       },
-      { name: "author", content: "Hafiz Anwar Zia Advocate" },
+      { name: "author", content: "Advocate Faheem Khokhar" },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Hafiz Anwar Zia Advocate — Narowal Legal Services" },
+      { property: "og:title", content: "Advocate Faheem Khokhar — Lahore High Court" },
       {
         property: "og:description",
-        content: "Trusted Legal Representation in Narowal & Zafarwal Chambers.",
+        content: "Trusted Legal Representation at Lahore High Court. Expert bail advocacy for all.",
       },
       { name: "twitter:card", content: "summary_large_image" },
     ],

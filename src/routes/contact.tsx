@@ -20,12 +20,12 @@ import { chambers, hospital as advocate, practiceAreas } from "@/lib/hospital-da
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact & Consultation — Hafiz Anwar Zia Advocate Narowal" },
+      { title: "Contact & Consultation — Advocate Faheem Khokhar Lahore" },
       {
         name: "description",
-        content: `Contact Hafiz Anwar Zia Advocate at Chamber 40 District Court Narowal or Chambers 19 & 20 Court Building Zafarwal. Phone: ${advocate.phone}, WhatsApp: ${advocate.whatsapp}.`,
+        content: `Contact Advocate Faheem Khokhar (Malik Faheem Khokhar) at Lahore High Court. Phone: ${advocate.phone}, WhatsApp: ${advocate.whatsapp} or ${advocate.whatsapp2}.`,
       },
-      { property: "og:title", content: "Contact Hafiz Anwar Zia Advocate" },
+      { property: "og:title", content: "Contact Advocate Faheem Khokhar" },
       { property: "og:description", content: "Book a legal consultation or reach chambers." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -58,7 +58,7 @@ function ContactPage() {
     setSubmitted(true);
   }
 
-  const narowalMap = `https://www.google.com/maps?q=${encodeURIComponent("District Court Narowal, Punjab, Pakistan")}&output=embed`;
+  const narowalMap = `https://www.google.com/maps?q=${encodeURIComponent("Lahore High Court, Lahore, Punjab, Pakistan")}&output=embed`;
 
   return (
     <>
@@ -111,7 +111,7 @@ function ContactPage() {
                 >
                   <a
                     href={`https://wa.me/${advocate.whatsapp}?text=${encodeURIComponent(
-                      `Assalam-o-Alaikum Hafiz Anwar Zia Advocate, my name is ${formData.name}. I would like to schedule a consultation regarding ${formData.category} at ${formData.chamber}. My phone is ${formData.phone}. Brief note: ${formData.details}`,
+                      `Assalam-o-Alaikum Advocate Faheem Khokhar, my name is ${formData.name}. I would like to schedule a consultation regarding ${formData.category} at ${formData.chamber}. My phone is ${formData.phone}. Brief note: ${formData.details}`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"
@@ -205,16 +205,16 @@ function ContactPage() {
                       <input
                         type="radio"
                         name="chamber"
-                        value="Narowal Chamber (Chamber 40, District Court)"
+                        value="Lahore High Court Chamber"
                         defaultChecked
                         className="accent-warm"
                       />
                       <div>
                         <span className="text-xs font-semibold block text-foreground">
-                          Narowal Chamber
+                          Lahore High Court
                         </span>
                         <span className="text-[0.7rem] text-muted-foreground">
-                          Chamber 40, District Court
+                          High Court of Punjab, Lahore
                         </span>
                       </div>
                     </label>
@@ -223,15 +223,15 @@ function ContactPage() {
                       <input
                         type="radio"
                         name="chamber"
-                        value="Zafarwal Chambers (Chambers 19 & 20, Court Building)"
+                        value="Lahore District Courts"
                         className="accent-warm"
                       />
                       <div>
                         <span className="text-xs font-semibold block text-foreground">
-                          Zafarwal Chambers
+                          District Courts Lahore
                         </span>
                         <span className="text-[0.7rem] text-muted-foreground">
-                          Chambers 19-20, Court Building
+                          District & Sessions Courts, Lahore
                         </span>
                       </div>
                     </label>
@@ -286,14 +286,22 @@ function ContactPage() {
               <div className="flex items-start gap-4 p-4 rounded-2xl bg-emerald-950/20 border border-emerald-500/20">
                 <MessageCircle className="size-5 text-emerald-400 mt-0.5 shrink-0" />
                 <div>
-                  <p className="text-xs text-emerald-400/80 font-mono">Instant WhatsApp Service</p>
+                  <p className="text-xs text-emerald-400/80 font-mono">WhatsApp for Legal Help</p>
                   <a
                     href={advocate.whatsappHref}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-lg font-semibold text-emerald-400 hover:underline"
+                    className="text-lg font-semibold text-emerald-400 hover:underline block"
                   >
-                    +92 301 7672378
+                    0308 5125111
+                  </a>
+                  <a
+                    href={advocate.whatsappHref2}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-base font-semibold text-emerald-400 hover:underline block mt-0.5"
+                  >
+                    0320 8007786
                   </a>
                   <p className="text-xs text-muted-foreground mt-0.5">
                     Send case copies, FIRs or request immediate timings

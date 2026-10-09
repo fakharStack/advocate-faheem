@@ -21,16 +21,16 @@ import { highlights, hospital as advocate } from "@/lib/hospital-data";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Hafiz Anwar Zia Advocate — Credentials & Philosophy" },
+      { title: "About Advocate Faheem Khokhar — Credentials & Philosophy" },
       {
         name: "description",
         content:
-          "Learn about Hafiz Anwar Zia Advocate, his legal credentials, advocacy philosophy, and courtroom representation in Narowal and Zafarwal.",
+          "Learn about Malik Faheem Khokhar (Advocate Faheem Khokhar), his legal credentials, advocacy philosophy, bail expertise, and High Court representation in Lahore.",
       },
-      { property: "og:title", content: "About Hafiz Anwar Zia Advocate" },
+      { property: "og:title", content: "About Advocate Faheem Khokhar" },
       {
         property: "og:description",
-        content: "Trusted legal counsel and ethical advocacy across Narowal & Zafarwal.",
+        content: "Trusted legal counsel and ethical advocacy at Lahore High Court.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -45,7 +45,7 @@ function AboutPage() {
       <PageIntro
         eyebrow="About the Advocate"
         title="Principled legal representation rooted in justice."
-        description={`${advocate.name} provides authoritative advocacy, thorough legal drafting, and strategic courtroom counsel across the District and Sessions Courts of Narowal and Zafarwal, as well as the High Court.`}
+        description={`${advocate.name} (Advocate Faheem Khokhar) provides authoritative advocacy, expert bail representation, and strategic courtroom counsel at the Lahore High Court and District Courts, with a special commitment to helping those who cannot afford legal representation.`}
       />
 
       {/* Profile & Philosophy */}
@@ -111,32 +111,33 @@ function AboutPage() {
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="rounded-2xl bg-secondary/80 p-5">
                     <Landmark className="size-5 text-warm" />
-                    <h4 className="mt-3 font-semibold text-foreground">High Court Bar Member</h4>
+                    <h4 className="mt-3 font-semibold text-foreground">Lahore High Court Member</h4>
                     <p className="mt-1 text-xs text-muted-foreground">
-                      Qualified for appellate representation, writ petitions, and High Court
+                      Qualified for appellate representation, writ petitions, and High Court bail
                       proceedings.
                     </p>
                   </div>
                   <div className="rounded-2xl bg-secondary/80 p-5">
-                    <Gavel className="size-5 text-warm" />
-                    <h4 className="mt-3 font-semibold text-foreground">District Bar Narowal</h4>
+                    <BookOpen className="size-5 text-warm" />
+                    <h4 className="mt-3 font-semibold text-foreground">University of the Punjab</h4>
                     <p className="mt-1 text-xs text-muted-foreground">
-                      Senior standing with regular trial advocacy and judicial dispute resolution.
+                      Law graduate of the University of the Punjab; alumnus of DPS Lahore.
                     </p>
                   </div>
                   <div className="rounded-2xl bg-secondary/80 p-5">
                     <FileText className="size-5 text-warm" />
-                    <h4 className="mt-3 font-semibold text-foreground">Meticulous Pleadings</h4>
+                    <h4 className="mt-3 font-semibold text-foreground">Bail Advocacy Expert</h4>
                     <p className="mt-1 text-xs text-muted-foreground">
-                      Accurate drafting of plaints, written statements, revisions, and
-                      constitutional writs.
+                      Specialist in pre-arrest & post-arrest bail petitions at the Lahore High Court,
+                      including urgent emergency hearings.
                     </p>
                   </div>
                   <div className="rounded-2xl bg-secondary/80 p-5">
                     <Users className="size-5 text-warm" />
-                    <h4 className="mt-3 font-semibold text-foreground">Dual Court Presence</h4>
+                    <h4 className="mt-3 font-semibold text-foreground">Public Legal Educator</h4>
                     <p className="mt-1 text-xs text-muted-foreground">
-                      Permanent chambers in both Narowal (Chamber 40) and Zafarwal (Chambers 19-20).
+                      YouTube legal advice channel & Facebook public figure page active since August
+                      2012, with 96% recommendation rating.
                     </p>
                   </div>
                 </div>

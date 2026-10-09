@@ -66,8 +66,8 @@ export function CTA() {
             Protect your rights with decisive legal counsel.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
-            Schedule a confidential consultation at Chamber 40, District Court Narowal or Chambers
-            19 & 20, Zafarwal Court Building.
+            Schedule a confidential consultation at Lahore High Court or District Courts, Lahore.
+            WhatsApp 0308 5125111 or 0320 8007786 for urgent legal help.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Button
@@ -94,7 +94,7 @@ export function CTA() {
               variant="outline"
               className="h-12 rounded-full px-6 active:scale-[0.98] transition-transform border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10"
             >
-              <a href="https://wa.me/923017672378" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/923085125111" target="_blank" rel="noreferrer">
                 WhatsApp Directly
               </a>
             </Button>

@@ -7,15 +7,15 @@ import { hospital as advocate, testimonials } from "@/lib/hospital-data";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Client Reviews — Hafiz Anwar Zia Advocate Narowal" },
+      { title: "Client Reviews — Advocate Faheem Khokhar Lahore" },
       {
         name: "description",
-        content: `Read client feedback and testimonials for Hafiz Anwar Zia Advocate. Rated ${advocate.rating}★ from ${advocate.reviews} Google reviews.`,
+        content: `Read client feedback for Advocate Faheem Khokhar. ${advocate.rating} recommendation rate from ${advocate.reviews} verified Facebook reviews.`,
       },
-      { property: "og:title", content: "Client Reviews — Hafiz Anwar Zia Advocate" },
+      { property: "og:title", content: "Client Reviews — Advocate Faheem Khokhar" },
       {
         property: "og:description",
-        content: "Real client testimonials regarding legal representation in Narowal & Zafarwal.",
+        content: "Real client testimonials for Advocate Faheem Khokhar at Lahore High Court.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -30,7 +30,7 @@ function TestimonialsPage() {
       <PageIntro
         eyebrow="Client Testimonials"
         title="Reputation built on legal integrity and client trust."
-        description={`Rated ${advocate.rating}★ based on ${advocate.reviews} public Google reviews. These testimonials reflect genuine experiences of individuals and families who placed their legal matters in our care.`}
+        description={`${advocate.rating} recommendation rate from ${advocate.reviews} verified Facebook page reviews. These testimonials reflect genuine experiences of individuals and families Advocate Faheem Khokhar has helped.`}
       />
 
       <section className="page-shell pb-20">
@@ -38,7 +38,7 @@ function TestimonialsPage() {
           <div className="glass-panel card-lift mb-10 grid gap-6 p-7 sm:grid-cols-[auto_1fr] sm:items-center sm:p-10">
             <div>
               <span className="text-6xl font-semibold tabular-nums">{advocate.rating}</span>
-              <span className="text-muted-foreground text-xl"> / 5.0</span>
+              <p className="mt-1 text-xs text-muted-foreground font-mono">Recommend</p>
             </div>
             <div>
               <div className="flex gap-1 text-warm">
@@ -50,18 +50,17 @@ function TestimonialsPage() {
                 ))}
               </div>
               <p className="mt-2 text-sm text-muted-foreground">
-                Verified rating based on {advocate.reviews} Google reviews across Narowal and
-                Zafarwal
+                {advocate.reviews} verified Facebook page reviews — 96% recommendation rate
               </p>
               <div className="mt-3 flex flex-wrap gap-2 text-xs">
                 <span className="rounded-full bg-secondary px-3 py-1 text-foreground">
-                  ✓ Civil Litigation
+                  ✓ Bail Advocacy
                 </span>
                 <span className="rounded-full bg-secondary px-3 py-1 text-foreground">
                   ✓ Criminal Defense
                 </span>
                 <span className="rounded-full bg-secondary px-3 py-1 text-foreground">
-                  ✓ Property Disputes
+                  ✓ Unclaimed Prisoners
                 </span>
                 <span className="rounded-full bg-secondary px-3 py-1 text-foreground">
                   ✓ Family Matters

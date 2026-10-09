@@ -18,17 +18,17 @@ import { chambers, hospital as advocate } from "@/lib/hospital-data";
 export const Route = createFileRoute("/chambers")({
   head: () => ({
     meta: [
-      { title: "Chamber Locations — Hafiz Anwar Zia Advocate Narowal & Zafarwal" },
+      { title: "Chamber Locations — Advocate Faheem Khokhar, Lahore High Court" },
       {
         name: "description",
         content:
-          "Visit Hafiz Anwar Zia Advocate at Chamber 40 District Court Narowal or Chambers 19 & 20 Court Building Zafarwal.",
+          "Visit Advocate Faheem Khokhar at Lahore High Court or District & Sessions Courts Lahore.",
       },
-      { property: "og:title", content: "Chamber Locations — Hafiz Anwar Zia Advocate" },
+      { property: "og:title", content: "Chamber Locations — Advocate Faheem Khokhar" },
       {
         property: "og:description",
         content:
-          "Chamber 40, District Court Narowal and Chambers 19 & 20, Court Building Zafarwal.",
+          "Lahore High Court and District Courts Lahore — chamber locations for Advocate Faheem Khokhar.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -42,8 +42,8 @@ function ChambersPage() {
     <>
       <PageIntro
         eyebrow="Chambers & Locations"
-        title="Dedicated chambers across Narowal & Zafarwal."
-        description="To provide seamless legal support across jurisdictions, Hafiz Anwar Zia Advocate maintains permanent working chambers at both key judicial centers in District Narowal."
+        title="Dedicated chambers at Lahore High Court."
+        description="To provide seamless legal support, Advocate Faheem Khokhar (Malik Faheem Khokhar) maintains active working chambers at the Lahore High Court and District Courts, Lahore."
       />
 
       <section className="page-shell pb-20 space-y-16">

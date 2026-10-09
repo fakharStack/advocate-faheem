@@ -32,13 +32,13 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hafiz Anwar Zia Advocate — Trusted Legal Representation in Narowal" },
+      { title: "Advocate Faheem Khokhar — Trusted Legal Representation at Lahore High Court" },
       {
         name: "description",
         content:
-          "Advocate High Court & District Courts. Civil litigation, criminal defense, family disputes, and courtroom advocacy in Narowal and Zafarwal.",
+          "Malik Faheem Khokhar, Advocate High Court Lahore. Expert bail advocacy, criminal defense, civil litigation, and legal help for all.",
       },
-      { property: "og:title", content: "Hafiz Anwar Zia Advocate — Narowal Legal Services" },
+      { property: "og:title", content: "Advocate Faheem Khokhar — Lahore High Court" },
       { property: "og:description", content: advocate.tagline },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -53,12 +53,12 @@ function HomePage() {
       {/* Hero Section */}
       <section className="page-shell grid min-h-[calc(100vh-5rem)] items-center gap-10 py-10 lg:grid-cols-[1.08fr_.92fr] lg:py-16">
         <div className="animate-fade-up">
-          <Eyebrow>High Court & District Courts Practice</Eyebrow>
+          <Eyebrow>Lahore High Court Practice</Eyebrow>
           <h1 className="max-w-4xl text-5xl font-semibold leading-[.98] sm:text-7xl lg:text-[5.2rem] text-balance">
-            Hafiz Anwar Zia <span className="text-warm">Advocate.</span>
+            Advocate Faheem <span className="text-warm">Khokhar.</span>
           </h1>
           <p className="mt-4 text-xs font-mono tracking-widest text-warm uppercase">
-            Advocate High Court & District & Sessions Courts
+            Malik Faheem Khokhar • Advocate High Court, Lahore
           </p>
           <p className="mt-6 max-w-xl text-lg leading-8 text-muted-foreground">
             {advocate.tagline} Zealous courtroom representation, authoritative civil and criminal
@@ -100,7 +100,7 @@ function HomePage() {
                 {advocate.rating}
                 <Star className="ml-1 inline size-4 fill-current text-warm transition-transform duration-300 group-hover:rotate-12" />
               </p>
-              <p className="mt-1 text-xs text-muted-foreground">Google rating</p>
+              <p className="mt-1 text-xs text-muted-foreground">Facebook recommend</p>
             </div>
             <div className="group cursor-default">
               <p className="text-2xl font-semibold tabular-nums transition-transform duration-200 group-hover:-translate-y-0.5">
@@ -110,9 +110,9 @@ function HomePage() {
             </div>
             <div className="group cursor-default">
               <p className="text-xl font-semibold transition-transform duration-200 group-hover:-translate-y-0.5 sm:text-2xl">
-                2 Chambers
+                LHC
               </p>
-              <p className="mt-1 text-xs text-muted-foreground">Narowal & Zafarwal</p>
+              <p className="mt-1 text-xs text-muted-foreground">Lahore High Court</p>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ function HomePage() {
                 <p className="font-semibold text-sm sm:text-base">Active Court Practice</p>
               </div>
               <p className="text-xs sm:text-sm text-muted-foreground">
-                District Courts Narowal & Zafarwal • High Court
+                Lahore High Court • District Courts Lahore
               </p>
             </div>
           </div>
@@ -213,8 +213,8 @@ function HomePage() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             <SectionHeading
               eyebrow="Chambers & Locations"
-              title="Accessible chambers in Narowal and Zafarwal."
-              description="Hafiz Anwar Zia maintains working chambers at both judicial centers for client convenience."
+              title="Accessible chambers in Lahore."
+              description="Advocate Faheem Khokhar maintains working chambers at Lahore High Court and District Courts for client convenience."
             />
             <Link
               to="/chambers"
@@ -274,7 +274,7 @@ function HomePage() {
               <SectionHeading
                 eyebrow="Client Testimonials"
                 title="Reputation forged on results and integrity."
-                description="What clients say about Hafiz Anwar Zia's legal counsel, court preparedness, and professionalism."
+                description="What clients and viewers say about Advocate Faheem Khokhar's legal counsel, bail advocacy, and commitment to justice."
               />
               <Link
                 to="/testimonials"

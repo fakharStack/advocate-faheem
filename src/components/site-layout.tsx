@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Menu, MessageCircle, Phone, Scale, X } from "lucide-react";
+import { Menu, MessageCircle, Phone, Scale, X, Youtube, Facebook } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { hospital, navItems } from "@/lib/hospital-data";
@@ -19,17 +19,17 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <Link
             to="/"
             className="group flex min-w-0 items-center gap-3"
-            aria-label="Hafiz Anwar Zia Advocate home"
+            aria-label="Advocate Faheem Khokhar home"
           >
             <span className="grid size-10 shrink-0 place-items-center rounded-full bg-primary text-primary-foreground shadow-neumorphic transition-transform duration-300 group-hover:scale-105 group-hover:rotate-6">
               <Scale className="size-5 transition-transform duration-300 group-hover:scale-110" />
             </span>
             <span className="min-w-0">
               <span className="block truncate text-sm font-semibold transition-colors duration-200 group-hover:text-primary sm:text-base">
-                Hafiz Anwar Zia
+                Faheem Khokhar
               </span>
               <span className="block text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
-                Advocate • Narowal
+                Advocate • Lahore High Court
               </span>
             </span>
           </Link>
@@ -119,24 +119,44 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               {hospital.title}
             </p>
             <p className="mt-4 max-w-sm text-sm leading-6 text-muted-foreground">
-              Committed to integrity, legal excellence, and zealous representation across District
-              Courts Narowal, Zafarwal, and the High Court.
+              Committed to justice, ethical advocacy, and helping the underprivileged access legal
+              representation at the Lahore High Court.
             </p>
+            <div className="mt-5 flex items-center gap-3">
+              <a
+                href={hospital.youtube}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="YouTube Channel"
+                className="grid size-8 place-items-center rounded-full bg-secondary text-muted-foreground transition hover:bg-red-600/20 hover:text-red-500"
+              >
+                <Youtube className="size-4" />
+              </a>
+              <a
+                href={hospital.facebookPage}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook Page"
+                className="grid size-8 place-items-center rounded-full bg-secondary text-muted-foreground transition hover:bg-blue-600/20 hover:text-blue-400"
+              >
+                <Facebook className="size-4" />
+              </a>
+            </div>
           </div>
           <div>
             <p className="text-sm font-semibold">Chambers</p>
             <p className="mt-3 text-sm leading-6 text-muted-foreground">
-              <strong className="text-foreground block">Narowal:</strong> Chamber 40, District &
-              Sessions Court
+              <strong className="text-foreground block">High Court:</strong> Lahore High Court,
+              Lahore, Punjab
             </p>
             <p className="mt-2 text-sm leading-6 text-muted-foreground">
-              <strong className="text-foreground block">Zafarwal:</strong> Chambers 19 & 20, Court
-              Building
+              <strong className="text-foreground block">District:</strong> District & Sessions
+              Courts, Lahore
             </p>
             <p className="mt-3 text-xs text-muted-foreground font-mono">{hospital.courtHours}</p>
           </div>
           <div>
-            <p className="text-sm font-semibold">Contact & Advisory</p>
+            <p className="text-sm font-semibold">Contact & Legal Help</p>
             <a
               href={`tel:${hospital.phoneHref}`}
               className="mt-3 flex items-center gap-2 text-sm text-muted-foreground transition hover:text-foreground"
@@ -145,15 +165,31 @@ export function SiteLayout({ children }: { children: ReactNode }) {
               {hospital.phone}
             </a>
             <a
+              href={`tel:${hospital.phone2Href}`}
+              className="mt-2 flex items-center gap-2 text-sm text-muted-foreground transition hover:text-foreground"
+            >
+              <Phone className="size-4 text-warm" />
+              {hospital.phone2}
+            </a>
+            <a
               href={hospital.whatsappHref}
               target="_blank"
               rel="noreferrer"
               className="mt-2 flex items-center gap-2 text-sm text-muted-foreground transition hover:text-foreground"
             >
               <MessageCircle className="size-4 text-emerald-400" />
-              WhatsApp: +92 301 7672378
+              WhatsApp: 0308 5125111
             </a>
-            <div className="mt-6 flex flex-wrap gap-3">
+            <a
+              href={hospital.whatsappHref2}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-1 flex items-center gap-2 text-sm text-muted-foreground transition hover:text-foreground"
+            >
+              <MessageCircle className="size-4 text-emerald-400" />
+              WhatsApp: 0320 8007786
+            </a>
+            <div className="mt-5 flex flex-wrap gap-3">
               <Link to="/chambers" className="text-sm text-muted-foreground hover:text-foreground">
                 Chamber Locations
               </Link>
@@ -170,7 +206,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </div>
         </div>
         <div className="border-t border-border/60 py-5 text-center text-xs text-muted-foreground">
-          © 2026 Hafiz Anwar Zia Advocate. High Court & District Court, Narowal. Professional Legal
+          © 2026 Advocate Faheem Khokhar (Malik Faheem Khokhar). Lahore High Court, Lahore. Professional Legal
           Representation.
         </div>
       </footer>
