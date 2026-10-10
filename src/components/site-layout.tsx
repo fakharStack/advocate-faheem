@@ -11,10 +11,10 @@ export function SiteLayout({ children }: { children: ReactNode }) {
   useEffect(() => setOpen(false), [pathname]);
 
   return (
-    <div className="min-h-screen overflow-hidden bg-background text-foreground">
+    <div className="min-h-screen overflow-x-hidden bg-background text-foreground flex flex-col">
       <div className="ambient ambient-one" aria-hidden="true" />
       <div className="ambient ambient-two" aria-hidden="true" />
-      <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-border/60 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80">
         <div className="page-shell grid min-h-20 grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-2">
           <Link
             to="/"
@@ -79,7 +79,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         </div>
         {open ? (
           <nav
-            className="page-shell animate-reveal border-t border-border/60 py-4 lg:hidden"
+            className="page-shell animate-reveal border-t border-border/60 py-4 lg:hidden max-h-[calc(100vh-5rem)] overflow-y-auto"
             aria-label="Mobile navigation"
           >
             <div className="grid gap-1">
@@ -93,7 +93,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
                   {item.label}
                 </Link>
               ))}
-              <div className="mt-2 flex gap-2 pt-2 border-t border-border/40">
+              <div className="mt-2 flex gap-2 pt-2 border-t border-border/40 pb-4">
                 <Button asChild size="sm" className="flex-1 rounded-xl">
                   <Link to="/contact">Book Consultation</Link>
                 </Button>
@@ -107,7 +107,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </nav>
         ) : null}
       </header>
-      <main>{children}</main>
+      <main className="flex-1">{children}</main>
       <footer className="border-t border-border/60">
         <div className="page-shell grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr]">
           <div>
