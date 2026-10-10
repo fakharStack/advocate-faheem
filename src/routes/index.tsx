@@ -15,7 +15,7 @@ import {
   ShieldCheck,
   Star,
 } from "lucide-react";
-import advocateHeroPhoto from "@/assets/images/advocate_hero_1791027276332.jpg";
+
 import courtExteriorPhoto from "@/assets/images/district_court_1791027304165.jpg";
 import { Button } from "@/components/ui/button";
 import { CTA, Eyebrow, SectionHeading } from "@/components/page";
@@ -118,7 +118,7 @@ function HomePage() {
         </div>
         <div className="group relative overflow-hidden rounded-[2.5rem] animate-fade-up [animation-delay:150ms]">
           <img
-            src={advocateHeroPhoto}
+            src="/og-image.png"
             alt="Law chamber and legal consultation office of Hafiz Anwar Zia Advocate"
             className="h-[32rem] w-full rounded-[2.5rem] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] sm:h-[42rem]"
           />

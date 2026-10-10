@@ -12,7 +12,7 @@ import {
   Sparkles,
   Users,
 } from "lucide-react";
-import chamberPhoto from "@/assets/images/court_chamber_1791027291368.jpg";
+
 import courtPhoto from "@/assets/images/district_court_1791027304165.jpg";
 import { CTA, PageIntro, SectionHeading } from "@/components/page";
 import { Reveal } from "@/components/reveal";
@@ -53,7 +53,7 @@ function AboutPage() {
         <Reveal variant="scale">
           <div className="group overflow-hidden rounded-[2rem] h-full">
             <img
-              src={chamberPhoto}
+              src="/og-image.png"
               alt="Hafiz Anwar Zia Advocate legal consultation chamber"
               className="h-full min-h-[26rem] w-full rounded-[2rem] object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
             />
